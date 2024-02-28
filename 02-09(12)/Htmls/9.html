@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2x2=7</title>
+    <link rel="stylesheet" href="./Styles/style9.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>Multiplicar</h1>
+        <nav class="header_Nav">
+            <div class="Nav_contenedor-Ul">
+                <ul class="Nav_Ul">
+                    <li class="lista"><a href="./Index.html" class="enlace">Incio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <div id="inp" class="form">
+            <label for="numero1">Introduce el primer número (1-10):</label>
+            <input  type="number" id="numero1" min="1" max="10">
+
+            <label for="numero2">Introduce el segundo número (1-10):</label>
+            <input type="number" id="numero2" min="1" max="10">
+
+            <button id="boton" onclick="generarTabla()">Generar Tabla</button>
+            <button id="resetBoton" onclick="limpiarCuentaRegresiva()">Limpiar</button>
+            <div id="tablaMultiplicar"></div>
+        <div>
+    </div>
+    
+
+    <script>
+        function generarTabla() {
+            const numero1 = parseInt(document.getElementById('numero1').value);
+            const numero2 = parseInt(document.getElementById('numero2').value);
+            const tablaMultiplicarDiv = document.getElementById('tablaMultiplicar');
+
+            if (numero1 >= 1 && numero1 <= 10 && numero2 >= 1 && numero2 <= 10) {
+                let tablaHTML = '<table>';
+                for (let i = 1; i <= numero2; i++) {
+                    tablaHTML += `<tr><td>${numero1} x ${i} = ${numero1 * i}</td></tr>`;
+                }
+                tablaHTML += '</table>';
+                tablaMultiplicarDiv.innerHTML = tablaHTML;
+            } else {
+                tablaMultiplicarDiv.innerHTML = 'Por favor, ingresa números válidos del 1 al 10.';
+            }
+        }
+
+        function limpiarCuentaRegresiva() {
+            const tablaMultiplicarDiv = document.getElementById("tablaMultiplicar");
+            tablaMultiplicarDiv.innerHTML = '';
+        }
+    </script>
+</body>
+</html>

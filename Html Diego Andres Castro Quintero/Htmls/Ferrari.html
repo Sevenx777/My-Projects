@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="">
+        <title>Diseñador freelancer</title>
+        <style>
+            *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#body{
+    background-color: #34263b;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.cont2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor div{
+    text-align: center;
+}
+
+.contenedor-imagen{
+    background-color: #1e0870;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+}
+
+.imagen{
+    width: 100%;
+    object-fit: cover;
+}
+
+.header{
+    background-color: #a15fe7;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_Div-nombre{
+    color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    background-color: #1e0870;
+}
+
+.header_Nav{
+    width: 100%;
+}
+
+.Nav_contenedor-Ul{
+    width: 100%;
+}
+
+.Nav_Ul{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lista{
+    list-style: none;
+    flex-grow: 1;
+    background-color: aqua;
+    text-align: center;
+    height: 60px;
+}
+
+.enlace{
+    display: flex;
+    height: 60px;
+    background-color: #8d33a8;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    justify-content: center;
+}
+
+.enlace:hover{
+    background-color: #b24ad1;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lamborghini{
+    min-width: 500px;
+    width: 420px;
+    margin: 40px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniAventador{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniHuracan{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniAventador2{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniCentenario{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniSian{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniVeneno{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+
+
+
+.Tituloslambo{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -280px 1px 30px 10px;
+    height: 50px;
+}
+
+.TituloslamboHuracan{
+    padding-left: 600px;
+    display: flex;
+    padding-top: 1px;
+    margin: -300px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboAventador{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -247px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboAventador2{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -275px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboCentenario{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -270px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboSian{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -270px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboVeneno{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -290px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.parrafoLambo{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 10px;
+    margin: -220px -21px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 17px;
+}
+
+
+
+.parrafoLamboHuracan{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -220px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 17px;
+}
+
+
+.parrafoLamboAventador{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -220px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 17px;
+}
+
+.parrafoLamboAventador2{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -220px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 17px;
+}
+
+.parrafoLamboCentenario{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -220px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 17px;
+}
+
+.parrafoLamboSian{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -220px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 17px;
+}
+
+.parrafoLamboVeneno{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -220px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 17px;
+}
+
+.portadalamborghini{
+    width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+
+    .header{
+        background-color: #a15fe7;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header_Nav{
+        width: 100%;
+        display: flex;
+    }
+
+    .Nav_contenedor-Ul{
+        width: 100%;
+    }
+
+    .Nav_Ul{
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header_Div-nombre{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 499px){
+    .Nav_Ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imagen{
+        margin-top: 60px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+        </style>
+    </head>
+    <body id="body">
+        <header class="header">
+            <div class="header_Div-nombre">
+                <h1>Diego Andres Castro Quintero</h1>
+            </div>
+            <nav class="header_Nav">
+                <div class="Nav_contenedor-Ul">
+                    <ul class="Nav_Ul">
+                        <li class="lista"><a href="./index.html" class="enlace">Incio</a></li>
+                        <li class="lista"><a href="./Corvet.html" class="enlace">Corvet</a></li>
+                        <li class="lista"><a href="./Lambo.html" class="enlace">Lamborghini</a></li>
+                        <li class="lista"><a href="./Automoviles.html" class="enlace">Automóviles</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+            <main class="main">
+                <div class="portadalamborghini">
+                    <img src="/Img/Fondoferrari.jpg" class="portadalamborghini">
+                </div>
+                <div class="contenedor">
+                    <div class="cont2">
+                        <img src="/Img/ferrari-488-pista.jpg" class="lamborghini">
+                        <h2 class="Tituloslambo">#6 FERRARI 488 PISTAFERRARI 488 PISTA</h2>
+                        <p class="parrafoLambo">
+                            En 2018 fue presentada la variante Ferrari 488 Pista con multitud de modificaciones enfocadas en la competición. Cabe recordar, de hecho, que el Ferrari 488 ha sido el coche de carreras de GT3 de Maranello durante los últimos años.
+
+                            Su motor V8 a 90º biturbo de 3,9 litros genera 720 CV y 770 Nm de par máximo y la carga aerodinámica es un 20% superior a la del Ferrari 488 GTB. Un 0 a 100 km/h en 2,85 segundos, una velocidad máxima de 340 km/h y un tiempo de 1:21.50 en Fiorano. ¡El mismo que el Ferrari 812 Superfast!
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/ferrari-f12-tdf.jpg" class="lamborghiniHuracan">  
+                        <h2 class="TituloslamboHuracan">#5 FERRARI F12 TDF</h2>
+                        <p class="parrafoLamboHuracan">
+                            El Ferrari F12 TDF fue el antecesor del moderno 812 Superfast. También usó un motor V12 y una estética berlinetta muy similar a la del reemplazo moderno. Si bien, solo se fabricó entre 2016 y 2017 antes de la llegada de su actualización.
+                            
+                            Sin embargo, sigue dando mucho de qué hablar con un tiempo de vuelta en Fiorano de 1:21.000, por delante de deportivos como el Ferrari 488 e incluso el propio 812 Superfast, que se queda a casi un segundo de distancia.
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/ferrari-296-gtb.jpg" class="lamborghiniAventador">
+                        <h2 class="TituloslamboAventador">#4 FERRARI 296 GTB</h2>
+                        <p class="parrafoLamboAventador">
+                            El Ferrari 296 GTB ha sido el segundo híbrido enchufable (PHEV) que ha salido de Maranello. Equipa un motor V6 a 120º biturbo de 3,0 litros con los turbocompresores situados en medio del bloque y dos motores eléctricos.
+
+                            La potencia combinada asciende hasta los 830 CV y 740 Nm de par máximo. Puede acelerar de 0 a 100 km/h en 2,9 segundos y alcanzar 330 km/h de velocidad máxima. Su tiempo en la pista de Ferrari fue de 1:21.000 y cuenta con una versión 296 GTB Assetto Fiorano que mejora su mecánica en puntos como las suspensiones, algunos detalles estéticos o el peso.
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/ferrari-812-competizione.jpg" class="lamborghiniAventador2">
+                        <h2 class="TituloslamboAventador2">#3 FERRARI 812 COMPETIZIONE</h2>
+                        <p class="parrafoLamboAventador2">
+                            El Ferrari 812 Competizione es una edición limitada de alto rendimiento basado en la berlinetta con motor V12 atmosférico de 6,5 litros. El coche desarrolla 830 CV y puede alcanzar las 9.500 rpm. Cuenta con dirección independiente en las cuatro ruedas y una estética extremadamente deportiva.
+
+                            Con solo 1.487 kg de peso se sitúa como el coche con motor de combustión interna puro de mayor rendimiento del Cavallino Rampante, capaz de acelerar de 0 a 100 km/h en 2,85 segundos y con un tiempo en Fiorano de 1:20.000 minutos.
+                        </p>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/ferrari-laferrari.jpg" class="lamborghiniCentenario">
+                        <h2 class="TituloslamboCentenario">#2 FERRARI LAFERRARI</h2>
+                        <p class="parrafoLamboCentenario">
+                            El Ferrari LaFerrari fue el primer coche híbrido de Maranello. También fue el primero en ser diseñado por el Centro Stile Ferrari y Flavio Manzoni. Se sitúa como la obra maestra de la marca en las dos últimas décadas, tanto en estética como en mecánica.
+                            
+                            Monta un motor V12 a 65º atmosférico de 6,3 litros con un sistema de recuperación de energía KERS de la Fórmula 1. En total desarrolla 963 CV y 900 Nm de par máximo y en Fiorano marcó un tiempo de 1:19.70 minutos.
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/ferrari-sf90-stradale.jpg" class="lamborghiniSian">
+                        <h2 class="TituloslamboSian">#1 FERRARI SF90 STRADALE</h2>
+                        <p class="parrafoLambo">
+                            Este hiperdeportivo es un coche híbrido enchufable que se sitúa en el tope de gama de la compañía, aunque por debajo de bólidos especiales como el Ferrari SP3 Daytona. Cuenta con un motor V8 biturbo de 4,0 litros y 3 motores eléctricos (uno en la transmisión y dos en el eje delantero) que suman 1.000 CV y 800 Nm de par máximo.
+
+                            El Ferrari SF90 Stradale es actualmente el coche más rápido en Fiorano con un tiempo de 1:19.000 minutos. Seguido de él y en segundo lugar encontramos al Ferrari SF90 Spider, que lo enmarcaremos dentro del primer puesto al ser únicamente la versión descapotable del mismo coche.
+                        </p>
+                        <h3></h3>
+                    </div>
+                </div>
+            </main>
+            <footer class="autor">
+                <h3 class="contenedor_parrafo">Todos los derechos reservados. Diego Andres Castro Quintero</h3>
+            </footer>
+    </body>
+</html>

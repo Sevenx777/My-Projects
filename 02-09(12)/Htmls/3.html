@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Descuentos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./Styles/style3.css">
+    </head>
+    <body>
+        <header>
+            <h1>Tienda</h1>
+            <nav class="header_Nav">
+                <div class="Nav_contenedor-Ul">
+                    <ul class="Nav_Ul">
+                        <li class="lista"><a href="./Index.html" class="enlace">Incio</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="contenedor">
+            <div class="form">
+                <p class="titulo">Tienda Ford - calcula el descuento</p>
+                <input type="text" placeholder="Introduzca el código" class="cod">
+                <button id="boton" class="btn btnCalcular">Calcular descuento</button>
+                <button id="resetBoton" class="btn btnLimpiar">Limpiar campos</button>
+                <div class="respuesta"></div>
+            </div>
+        </div>
+        <script>
+            const codigo = document.querySelector(".cod");
+            const respuesta = document.querySelector(".respuesta");
+            const btnCalcu = document.querySelector(".btnCalcular");
+            const btnLimpiar = document.querySelector(".btnLimpiar");
+            let precio = 100;
+            let precio2 = 150;
+            let precio3 =90
+
+
+btnCalcu.addEventListener("click", ()=>{
+    if(codigo.value==1){
+        respuesta.innerHTML= `<p style="width:100%"><b>Destino:</b>Barcelona</p>
+                            <p style="width:100%"><b>Precio:</b> 100$</p>
+                            <p style="width:100%"><b>Descuento:</b> 5%</p>
+                            <p style="width:100%; font-size:1em;"><b>Precio Total:</b> ${precio-(precio*0.05)}</p>`;
+        
+    }else {
+        if(codigo.value==2){
+            respuesta.innerHTML= `<p style="width:100%"><b>Destino:</b>Madrid</p>
+                            <p style="width:100%"><b>Precio:</b> 150$</p>
+                            <p style="width:100%"><b>Descuento:</b> 10%</p>
+                            <p style="width:100%; font-size:1em;"><b>Precio Total:</b> ${precio2-(precio2*0.10)}</p>`;
+
+    }else {
+        if(codigo.value==3){
+            respuesta.innerHTML= `<p style="width:100%"><b>Destino:</b>Valencia</p>
+                            <p style="width:100%"><b>Precio:</b> 90$</p>
+                            <p style="width:100%"><b>Descuento:</b> 15%</p>
+                            <p style="width:100%; font-size:1em;"><b>Precio Total:</b> ${precio3-(precio2*0.15)}</p>`;
+
+        }else{
+            respuesta.innerHTML= `<p style="color:red">El código no fue encontrado<p/>`;
+        }
+    }}
+});
+
+
+btnLimpiar.addEventListener("click", ()=>{
+    respuesta.innerHTML= "";
+    codigo.value="";
+});
+        </script>
+    </body>
+</html>

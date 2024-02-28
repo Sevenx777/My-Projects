@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suma y Promedio</title>
+</head>
+<body>
+    <button id="buttonA">Botón A</button>
+    <button id="buttonB">Botón B</button>
+    <button id="buttonAB">Botón AB</button>
+    <div id="output"></div>
+
+    <script>
+        let contar = 0;
+        let numero = 0;
+        let suma = 0;
+        let promedio = 0;
+
+        const buttonA = document.getElementById("buttonA");
+        const buttonB = document.getElementById("buttonB");
+        const buttonAB = document.getElementById("buttonAB");
+        const output = document.getElementById("output");
+
+        buttonA.addEventListener("click", function () {
+            output.innerHTML = ".";
+            contar = 5;
+            suma = 0;
+            numero = 0;
+
+            for (let index = 0; index < contar; index++) {
+                numero = numero + 2;
+                output.innerHTML += "<br>" + numero;
+                suma += numero;
+            }
+        });
+
+        buttonB.addEventListener("click", function () {
+            if (contar > 0) {
+                promedio += suma / contar;
+                output.innerHTML = "Suma: " + suma;
+            } else {
+                output.innerHTML = "No se ha generado la secuencia aún.";
+            }
+        });
+
+        buttonAB.addEventListener("click", function () {
+            if (contar > 0) {
+                promedio = suma / contar;
+                output.innerHTML = "Promedio: " + promedio;
+            } else {
+                output.innerHTML = "No se ha generado la secuencia aún.";
+            }
+        });
+
+    </script>
+</body>
+</html>

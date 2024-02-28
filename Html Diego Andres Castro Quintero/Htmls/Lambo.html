@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="">
+        <title>Diseñador freelancer</title>
+        <style>
+            *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#body{
+    background-color: #34263b;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.cont2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor div{
+    text-align: center;
+}
+
+.contenedor-imagen{
+    background-color: #1e0870;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+}
+
+.imagen{
+    width: 100%;
+    object-fit: cover;
+}
+
+.header{
+    background-color: #a15fe7;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_Div-nombre{
+    color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    background-color: #1e0870;
+}
+
+.header_Nav{
+    width: 100%;
+}
+
+.Nav_contenedor-Ul{
+    width: 100%;
+}
+
+.Nav_Ul{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lista{
+    list-style: none;
+    flex-grow: 1;
+    background-color: aqua;
+    text-align: center;
+    height: 60px;
+}
+
+.enlace{
+    display: flex;
+    height: 60px;
+    background-color: #8d33a8;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    justify-content: center;
+}
+
+.enlace:hover{
+    background-color: #b24ad1;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lamborghini{
+    min-width: 500px;
+    width: 420px;
+    margin: 40px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniAventador{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniHuracan{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniAventador2{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniCentenario{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniSian{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniVeneno{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+
+
+.Tituloslambo{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -335px 1px 30px 10px;
+    height: 50px;
+}
+
+.TituloslamboHuracan{
+    padding-left: 600px;
+    display: flex;
+    padding-top: 1px;
+    margin: -335px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboAventador{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -335px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboAventador2{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -335px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboCentenario{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -335px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboSian{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -335px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboVeneno{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -335px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.parrafoLambo{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 10px;
+    margin: -290px -21px 30px 10px;
+    width: 1200px;
+    height: 400px;
+}
+
+
+
+.parrafoLamboHuracan{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -290px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    
+}
+
+
+.parrafoLamboAventador{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -290px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    
+}
+
+.parrafoLamboAventador2{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -290px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    
+}
+
+.parrafoLamboCentenario{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -290px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    
+}
+
+.parrafoLamboSian{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -290px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    
+}
+
+.parrafoLamboVeneno{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -290px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    
+}
+
+.portadalamborghini{
+    width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+
+    .header{
+        background-color: #a15fe7;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header_Nav{
+        width: 100%;
+        display: flex;
+    }
+
+    .Nav_contenedor-Ul{
+        width: 100%;
+    }
+
+    .Nav_Ul{
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header_Div-nombre{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 499px){
+    .Nav_Ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imagen{
+        margin-top: 60px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+        </style>
+    </head>
+    <body id="body">
+        <header class="header">
+            <div class="header_Div-nombre">
+                <h1>Diego Andres Castro Quintero</h1>
+            </div>
+            <nav class="header_Nav">
+                <div class="Nav_contenedor-Ul">
+                    <ul class="Nav_Ul">
+                        <li class="lista"><a href="./index.html" class="enlace">Incio</a></li>
+                        <li class="lista"><a href="./Corvet.html" class="enlace">Corvet</a></li>
+                        <li class="lista"><a href="./Ferrari.html" class="enlace">Ferrari</a></li>
+                        <li class="lista"><a href="./Automoviles.html" class="enlace">Automóviles</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+            <main class="main">
+                <div class="portadalamborghini">
+                    <img src="/Img/Fondolamboht.jpg" class="portadalamborghini">
+                </div>
+                <div class="contenedor">
+                    <div class="cont2">
+                        <img src="/Img/Uruslambo.jpg" class="lamborghini">
+                        <h2 class="Tituloslambo">#7 Lamborghini Urus</h2>
+                        <p class="parrafoLambo">
+                            El Lamborghini Urus es uno de los Lamborghini más famosos del mundo. Las razones de su popularidad son su hermoso e icónico diseño aerodinámico y su rendimiento de ultra alta velocidad. Aparte de su exterior, su interior también es lujoso y hermoso. Viene con todas las especificaciones modernas de alta tecnología que uno puede esperar de un automóvil de este tipo.
+                            
+                            El Lamborghini Urus viene equipado con un motor V8 biturbo de 4.0 litros que puede producir hasta 585 caballos de fuerza. Este motor ayuda a este coche a acelerar de 0 a 100 km / h en solo 3,6 segundos. Este automóvil tiene una velocidad máxima de 190 millas por hora. Cada unidad del Lamborghini Urus puede costar hasta $ 207,326.
+                                         
+                            Velocidad máxima: 305 km / h (190 mph)
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/Lambohuracan.jpg" class="lamborghiniHuracan">  
+                        <h2 class="TituloslamboHuracan">#6 Lamborghini Huracan Performante Spyder</h2>
+                        <p class="parrafoLamboHuracan">
+                            El Lamborghini Huracan Performante Spyder fue diseñado y desarrollado por Lamborghini para un alto rendimiento y ultra velocidad. El Lamborghini Huracan Performante Spyder tiene un hermoso interior y un exterior aerodinámico de varios colores. Este coche también se puede personalizar según la elección del cliente.
+
+                            El Lamborghini Huracan Performante Spyder viene equipado con un motor V10 de 5.2L de alto rendimiento. Este motor puede producir hasta 630 hp y 443 lb-pie de torsión. Este motor combinado con la carrocería aerodinámica de este automóvil, le permite alcanzar hasta 201 mph. No solo esto, sino que este automóvil también puede acelerar de 0 a 100 km / h en solo 3,1 segundos. El Lamborghini Huracan Performante Spyder viene con múltiples opciones de conducción y una transmisión de siete velocidades. El costo de cada unidad puede rondar los $ 308,850.
+                        
+                            Velocidad máxima: 325 km / h (201 mph)
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/LamboAventador.jpg" class="lamborghiniAventador">
+                        <h2 class="TituloslamboAventador">#5 Lamborghini Aventador LP 700-4</h2>
+                        <p class="parrafoLamboAventador">
+                            El Lamborghini Aventador LP 700-4 es uno de los 5 autos Lamborghini más rápidos del mundo. El Lamborghini Aventador LP 700-4 tiene uno de los interiores más impresionantes y un exterior muy elegante y aerodinámico. Aparte de esto, también es un vehículo muy ligero. Los nuevos modelos de Lamborghini Aventador LP 700-4 vienen equipados con un motor v12 de alto rendimiento capaz de producir 690 caballos de fuerza.
+                            
+                            El motor de alto rendimiento del Lamborghini Aventador LP 700-4 lo ayuda a alcanzar una velocidad máxima de 217 mph. Puede acelerar de 0 a 100 km / h en menos de 3 segundos. Este coche viene con una transmisión manual de siete velocidades. Cada unidad de automóvil Lamborghini Aventador LP 700-4 cuesta hasta $ 399,500.
+                           
+                            Velocidad máxima: 350 km / h (217 mph)
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/LamboAventador2.jpg" class="lamborghiniAventador2">
+                        <h2 class="TituloslamboAventador2">#4 Lamborghini Aventador SVJ Roadster</h2>
+                        <p class="parrafoLamboAventador2">
+                            El Lamborghini Aventador SVJ Roadster es el cuarto Lamborghini más rápido del mundo. Es un auto de edición limitada y solo cuenta con 800 unidades. El Lamborghini Aventador SVJ Roadster es conocido por su hermoso aspecto en el exterior y un interior súper lujoso en el interior. El Lamborghini Aventador SVJ Roadster viene equipado con un motor V12 de 6.5L con opción de inyección multipunto.
+
+                            El potente motor del Lamborghini Aventador SVJ Roadster puede ayudarlo a producir 770 caballos de fuerza y ​​531 libras-pie de torque. Este automóvil puede alcanzar la velocidad máxima de 350 km / hy puede acelerar de 0 a 62 en solo 2,9 segundos. Cada unidad de este automóvil tiene un precio de $ 573,966.
+
+                            Velocidad máxima: 350 km / h (217 mph)
+                        </p>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/lamboCentenario.jpg" class="lamborghiniCentenario">
+                        <h2 class="TituloslamboCentenario">#3 Lamborghini Centenario</h2>
+                        <p class="parrafoLamboCentenario">
+                            El Lamborghini Centenario es el tercer automóvil Lamborghini más rápido del mundo. Este automóvil se presentó por primera vez en el Salón del Automóvil de Ginebra en 2016 y desde entonces ha sido uno de los temas principales para los críticos de automóviles. El Lamborghini Centenario tiene uno de los exteriores más bellos y un interior elegante de súper lujo.
+
+                            Este automóvil viene equipado con un V12 que genera 770 PS y produce 759 hp. Lo que puede acelerar este coche de 0 a 100 en solo 2,8 segundos. Tiene una velocidad máxima limitada de 350 km / h por razones de seguridad vial. Este es un automóvil de edición limitada, ya que fue creado para conmemorar el centenario del fundador de la compañía. Cada unidad de este automóvil puede costar hasta $ 3.7 millones.
+                            
+                            Velocidad máxima: 350 km / h (217 mph)
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/LamboSian.jpg" class="lamborghiniSian">
+                        <h2 class="TituloslamboSian">#2 Lamborghini Sian FKP 37</h2>
+                        <p class="parrafoLambo">
+                            El Lamborghini Sian FKP 37 es el segundo automóvil de producción Lamborghini más rápido. También es uno de los coches más rápidos del mundo. El Lamborghini Sian FKP 37 es un automóvil deportivo híbrido. Lo que significa que tiene motores eléctricos y un motor separado. Este automóvil se presentó por primera vez en 2019. Tiene un diseño y un exterior hermosos. También tiene un interior de alta gama de súper lujo. Este deportivo híbrido viene equipado con un motor L539 V12 de 6.5 L y motores eléctricos de 25 kW, que le permiten obtener 807 caballos de fuerza.
+
+                            El Lamborghini Sian FKP 37 es un automóvil de alto rendimiento y puede alcanzar la velocidad máxima de 350 km / h, limitada electrónicamente para la seguridad vial. Este coche puede pasar de cero a cien en 3 segundos. Solo se produjeron 63 unidades de este automóvil, y posteriormente se produjeron 19 unidades para su versión roadster. Cada uno de estos puede costar hasta $ 2 millones.
+
+                            Velocidad máxima: 350 km / h (217 mph)
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/Lamboveneno.jpg" class="lamborghiniVeneno">
+                        <h2 class="TituloslamboVeneno">#1 Lamborghini veneno</h2>
+                        <p class="parrafoLambo">
+                            El Lamborghini Veneno es el automóvil Lamborghini más rápido del mundo. Es un automóvil de edición limitada que se presentó el día del 50 aniversario de Lamborghini Motor Company.
+
+                            El Lamborghini Veneno es conocido como el Lambo más rápido porque rompió todos los récords establecidos por todos los demás autos Lamborghini. Podría alcanzar la velocidad máxima de 356 km / hy pasar de 0 a 100 km / h en solo 2,8 segundos. Venía con un motor de alto rendimiento que podía producir 740 caballos de fuerza. El costo de cada unidad del Lamborghini Veneno es de aproximadamente $ 4.5 millones.
+
+                            Velocidad máxima: 356 km / h (221 mph)
+                        </p>
+                    </div>
+                </div>
+            </main>
+            <footer class="autor">
+                <h3 class="contenedor_parrafo">Todos los derechos reservados. Diego Andres Castro Quintero</h3>
+            </footer>
+    </body>
+</html>

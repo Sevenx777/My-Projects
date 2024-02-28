@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="">
+        <title>Diseñador freelancer</title>
+        <style>
+            *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#body{
+    background-color: #34263b;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.cont2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor div{
+    text-align: center;
+}
+
+.contenedor-imagen{
+    background-color: #1e0870;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+}
+
+.imagen{
+    width: 100%;
+    object-fit: cover;
+}
+
+.header{
+    background-color: #a15fe7;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_Div-nombre{
+    color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    background-color: #1e0870;
+}
+
+.header_Nav{
+    width: 100%;
+}
+
+.Nav_contenedor-Ul{
+    width: 100%;
+}
+
+.Nav_Ul{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lista{
+    list-style: none;
+    flex-grow: 1;
+    background-color: aqua;
+    text-align: center;
+    height: 60px;
+}
+
+.enlace{
+    display: flex;
+    height: 60px;
+    background-color: #8d33a8;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    justify-content: center;
+}
+
+.enlace:hover{
+    background-color: #b24ad1;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lamborghini{
+    min-width: 500px;
+    width: 420px;
+    margin: 40px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniAventador{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniHuracan{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniAventador2{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniCentenario{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniSian{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniVeneno{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+
+
+.Tituloslambo{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -280px 1px 30px 10px;
+    height: 50px;
+}
+
+.TituloslamboHuracan{
+    padding-left: 600px;
+    display: flex;
+    padding-top: 1px;
+    margin: -300px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboAventador{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -247px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboAventador2{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -262px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboCentenario{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -330px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboSian{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -310px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboVeneno{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -290px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.parrafoLambo{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 10px;
+    margin: -220px -21px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 20px;
+}
+
+
+
+.parrafoLamboHuracan{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -220px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 20px;
+}
+
+
+.parrafoLamboAventador{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -170px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 20px;
+}
+
+.parrafoLamboAventador2{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -170px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 20px;
+}
+
+.parrafoLamboCentenario{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -220px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 20px;
+}
+
+.parrafoLamboSian{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -220px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 20px;
+}
+
+.parrafoLamboVeneno{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: end;
+    padding-top: 1px;
+    margin: -220px 1px 30px 10px;
+    width: 1200px;
+    height: 400px;
+    font-size: 20px;
+}
+
+.portadalamborghini{
+    width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+
+    .header{
+        background-color: #a15fe7;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header_Nav{
+        width: 100%;
+        display: flex;
+    }
+
+    .Nav_contenedor-Ul{
+        width: 100%;
+    }
+
+    .Nav_Ul{
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header_Div-nombre{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 499px){
+    .Nav_Ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imagen{
+        margin-top: 60px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+        </style>
+    </head>
+    <body id="body">
+        <header class="header">
+            <div class="header_Div-nombre">
+                <h1>Diego Andres Castro Quintero</h1>
+            </div>
+            <nav class="header_Nav">
+                <div class="Nav_contenedor-Ul">
+                    <ul class="Nav_Ul">
+                        <li class="lista"><a href="./index.html" class="enlace">Incio</a></li>
+                        <li class="lista"><a href="./Lambo.html" class="enlace">Lamborghini</a></li>
+                        <li class="lista"><a href="./Ferrari.html" class="enlace">Ferrari</a></li>
+                        <li class="lista"><a href="./Automoviles.html" class="enlace">Automóviles</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+            <main class="main">
+                <div class="portadalamborghini">
+                    <img src="/Img/fondoCorvet_1.jpg" class="portadalamborghini">
+                </div>
+                <div class="contenedor">
+                    <div class="cont2">
+                        <img src="/Img/CROVETE2020.jpg" class="lamborghini">
+                        <h2 class="Tituloslambo">#7 2020 Chevrolet Corvette Stingray (C8)</h2>
+                        <p class="parrafoLambo">
+                            Con una velocidad máxima de 312 Km/h con 502CV y pensado 1730kg, el Chevrolet Corvette Stingray ocupa el septimo puesto.
+                            Es un Techo Targa RWD de 2 puertas con 2 asientos y un central trasero 6,2 L V8 Gasolina motor.
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/corvettec72015.jpg" class="lamborghiniHuracan">  
+                        <h2 class="TituloslamboHuracan">#6 2015 Chevrolet Corvette Z06 Coupé (C7)</h2>
+                        <p class="parrafoLamboHuracan">
+                            Con una velocidad máxima de 315 Km/h con 659CV y pesando 1598kg, el Chevrolet Corvette Z06 Coupé ocupa el sexto puesto conjunto.
+                            Es un Coupé RWD de 2 puertas con 2 asientos y un delantero 6,2 L V8 Sobrealimentado Gasolina motor.
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/corvette2023-z06.jpg" class="lamborghiniAventador">
+                        <h2 class="TituloslamboAventador">#5 2022 Chevrolet Corvette Z06 (C8)</h2>
+                        <p class="parrafoLamboAventador">
+                            Con una velocidad máxima de 315 Km/h con 679CV y pesando 1661kg, el Chevrolet Corvette Z06 ocupa el quinto puesto conjunto.
+                            Es un Techo Targa RWD de 2 puertas con 2 asientos y un central trasero 5,5 L V8 Gasolina motor.
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/C6Coupé2006.jpg" class="lamborghiniAventador2">
+                        <h2 class="TituloslamboAventador2">#4 2006 Chevrolet Corvette Z06 (C6)</h2>
+                        <p class="parrafoLamboAventador2">
+                            Con una velocidad máxima de 320 Km/h con 512CV y 1495kg, el Chevrolet Corvette Z06 ocupa el cuarto puesto conjunto.
+                            Es un Coupé RWD de 2 puertas con 2 asientos y un delantero 7 L V8 Gasolina motor.
+                        </p>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/2012-C6.jpg" class="lamborghiniCentenario">
+                        <h2 class="TituloslamboCentenario">#3 2012 Chevrolet Corvette Z06 (C6)"</h2>
+                        <p class="parrafoLamboCentenario">
+                            Con una velocidad máxima de 320 Km/h con 580CV y pesando 1520kg, el Chevrolet Corvette Z06 ocupa el tercero puesto conjunto.
+                            Es un Coupé RWD de 2 puertas con 2 asientos y un delantero 7 L V8 Gasolina motor.
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/Chevrolet Corvette ZR1 2014.jpg" class="lamborghiniSian">
+                        <h2 class="TituloslamboSian">#2 2012 Chevrolet Corvette ZR1 (C6)</h2>
+                        <p class="parrafoLambo">
+                            Con una velocidad máxima de 330 Km/h con 647CV y pesando 1570kg, el Chevrolet Corvette ZR1 ocupa el tercero puesto conjunto.
+                            Es un Coupé RWD de 2 puertas con 2 asientos y un delantero 6,2 L V8 Sobrealimentado Gasolina motor.
+                        </p>
+                        <h3></h3>
+                    </div>
+                    <div class="cont2">
+                        <img src="/Img/2019-Chevrolet-Corvette-ZR1.jpg" class="lamborghiniVeneno">
+                        <h2 class="TituloslamboVeneno">#1 2018 Chevrolet Corvette ZR1 Coupé (C7)</h2>
+                        <p class="parrafoLambo">
+                            Con una velocidad máxima de 341 Km/h con 765CV y pesando 1615kg, el Chevrolet Corvette ZR1 Coupé ocupa el primero puesto conjunto.
+                            Es un Coupé RWD de 2 puertas con 2 asientos y un delantero 6,2 L V8 Sobrealimentado Gasolina motor.
+                        </p>
+                    </div>
+                </div>
+            </main>
+            <footer class="autor">
+                <h3 class="contenedor_parrafo">Todos los derechos reservados. Diego Andres Castro Quintero</h3>
+            </footer>
+    </body>
+</html>

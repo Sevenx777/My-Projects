@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(Poppins-Light.ttf) format(truetype);
+    font-style:normal;
+    font-weight: normal;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #E1DAC6;
+    justify-content: center;
+    align-items: center;
+}
+
+.i {
+    color: #E1DAC6;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    position: relative;
+    text-align: center;   
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.button{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    margin: 67px 0px 0px 11px;
+
+}
+
+.buttons {
+    display: flex;
+    margin-left: -12px;
+    position: absolute;
+}
+
+.buttonsNav {
+    
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.music, p {
+    color: #DAD5C1;
+}
+
+.nameSong{
+    font-family: "Poppins";
+    src: url(Poppins-Light.ttf) format(truetype);
+    font-weight: normal;
+    font-size: 18.9px;
+    position: absolute;
+    margin: 1px 0px 0px 1px;
+}
+
+.nameArtist{
+    font-family: "Poppins";
+    src: url(Poppins-Light.ttf) format(truetype);
+    font-style:normal;
+    font-weight:normal;
+    font-size: 16px;
+    display: flex;
+    position: absolute;
+    margin: 30px 0px 0px 1px;
+    opacity: 50%;
+}
+
+
+.volume {
+    display: inline-flex;
+}
+
+.volumeCont {
+    display: flex;
+    align-items: center;
+    width: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.volumenBar{
+    position: absolute;
+    width: 100%;
+    background: #E1DAC6;
+    height: 0.6rem;
+    border-radius: 0.6rem;
+}
+
+.barraContainer {
+    width: 100%;
+}
+
+.cont {
+    background-color: #726f59;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contImg {
+    height: 160px;
+    width: 160px;
+    border-radius:1px;
+    position: absolute;
+    margin: 2px 300px 0px 0px;
+}
+
+.contImg img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#progressLine {
+    width: 263px;
+    height: 0.9rem;
+    background: #E1DAC6;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin: 148px -190px 0px 0px;
+}
+
+#progressLine::-webkit-slider-thumb {
+    background: #E1DAC6;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+#volumenBar {
+    width: 100px;
+    background: #E1DAC6;
+    height: 0.6rem;
+    border-radius: 0.6rem;
+}
+
+#volumenBar::-webkit-slider-thumb {
+    background: #e1dac6;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+}

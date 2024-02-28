@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cuenta Regresiva</title>
+    <link rel="stylesheet" href="./Styles/style6.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>cuentaRegresiva</h1>
+        <nav class="header_Nav">
+            <div class="Nav_contenedor-Ul">
+                <ul class="Nav_Ul">
+                    <li class="lista"><a href="./Index.html" class="enlace">Incio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor" >
+        <div class="form">
+            <button id="boton" onclick="iniciarCuentaRegresiva()">Iniciar Cuenta Regresiva</button>
+            <button id="resetBoton" onclick="limpiarCuentaRegresiva()">Limpiar</button>
+             <div class="botones" id="cuentaRegresiva"></div>
+        </div>
+        
+    </div>
+    
+    
+
+    <script>
+        let intervalId;
+        let num = 5;
+
+        function iniciarCuentaRegresiva() {
+            limpiarCuentaRegresiva();
+
+            const cuentaRegresivaDiv = document.getElementById('cuentaRegresiva');
+            intervalId = setInterval(function() {
+                if (num >= 1) {
+                    cuentaRegresivaDiv.innerHTML += num.toString() + '<br>';
+                    num--;
+                } else {
+                    clearInterval(intervalId);
+                }
+            }, 1000);
+        }
+
+        function limpiarCuentaRegresiva() {
+            const cuentaRegresivaDiv = document.getElementById('cuentaRegresiva');
+            cuentaRegresivaDiv.innerHTML = '';
+            clearInterval(intervalId);
+            num = 5;
+        }
+    </script>
+</body>
+</html>

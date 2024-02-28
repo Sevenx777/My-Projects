@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    background-color:#176B87;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    cursor: pointer;
+    background-color:#053B50;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    padding-top: 0.5rem;
+    justify-content: center;
+  }
+  .contenedor{
+    justify-content: center;
+    display: flex;
+    padding-top: 5rem;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #64CCC5;
+    width: 22rem;
+    height: 24rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .header_Div-nombre{
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.3em;
+    background-color: #310a75;
+}
+
+.header_Nav{
+    width: 100%;
+}
+
+.Nav_contenedor-Ul{
+    width: 100%;
+}
+
+.Nav_Ul{
+    display: flex;
+}
+
+.lista{
+    list-style: none;
+    flex-grow: 1;
+    background-color: aqua;
+    text-align: center;
+    height: 60px;
+}
+
+.enlace{
+    display: flex;
+    height: 60px;
+    background-color: #4821d1;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    justify-content: center;
+}
+
+.enlace:hover{
+    background-color: #7c41f7;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#boton, #resetBoton {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}  
+
+  #resetBoton {
+    background-color: #e74c3c;
+    cursor:pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #resetBoton:hover {
+    background-color: #c0392b;
+  }

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="">
+        <title>Diseñador freelancer</title>
+        <style>
+            *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #442828;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.cont2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor div{
+    text-align: center;
+}
+
+.contenedor-imagen{
+    background-color: #1e0870;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+
+.imagen{
+    width: 100%;
+    object-fit: fill;
+    position: absolute;
+    margin-top: -180px;
+}
+
+.header{
+    background-color: #a15fe7;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_Div-nombre{
+    color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    background-color: #1e0870;
+}
+
+.header{
+    background-color: #a15fe7;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_Div-nombre{
+    color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    background-color: #1e0870;
+}
+
+.header_Nav{
+    width: 100%;
+}
+
+.Nav_contenedor-Ul{
+    width: 100%;
+}
+
+.Nav_Ul{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_Nav{
+    width: 100%;
+}
+
+.Nav_contenedor-Ul{
+    width: 100%;
+}
+
+.Nav_Ul{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lista{
+    list-style: none;
+    flex-grow: 1;
+    background-color: aqua;
+    text-align: center;
+    height: 60px;
+}
+
+.enlace{
+    display: flex;
+    height: 60px;
+    background-color: #8d33a8;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    justify-content: center;
+}
+
+.enlace:hover{
+    background-color: #b24ad1;
+    text-align: center;
+    font-size: 20px;
+}
+
+.autor{
+    display: flex;
+    font-size: 22px;
+    margin: 40px;
+    padding: 0px;
+    text-align: left;
+}
+
+.contenedor_parrafo{
+    margin-left: -30px;
+    position: absolute;
+
+}
+
+.lamborghini{
+    min-width: 500px;
+    width: 420px;
+    margin: 40px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniAventador{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniHuracan{
+    min-width: 279px;
+    width: 280px;
+    margin: 322px 141px 84px -65px;
+    border-radius: 50px;
+}
+
+.lamborghiniAventador2{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniCentenario{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniSian{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+.lamborghiniVeneno{
+    min-width: 500px;
+    width: 420px;
+    margin: -50px 800px 1px 1px;
+    border-radius: 50px;
+}
+
+
+
+.Tituloslambo{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -280px 1px 30px 10px;
+    height: 50px;
+}
+
+.TituloslamboHuracan{
+    padding-left: 600px;
+    display: flex;
+    padding-top: 1px;
+    margin: 345px 1px 30px -400px;
+    height: 50px;
+    
+}
+
+.TituloslamboAventador{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -247px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboAventador2{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -262px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboCentenario{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -330px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboSian{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -310px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.TituloslamboVeneno{
+    padding-left: 600px;
+    display: flex;
+    margin: 1%;
+    margin: -290px 1px 30px 10px;
+    height: 50px;
+    
+}
+
+.parrafoLamboHuracan{
+    line-height: 1.75;
+    margin-inline: 80px;
+    position: relative;
+    padding-left:500px ;
+    text-align: start;
+    padding-top: 10px;
+    margin: -365px 145px -30px -320px;
+    width: 670px;
+    height: 400px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 760px) {
+
+    .header{
+        background-color: #a15fe7;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header_Nav{
+        width: 100%;
+        display: flex;
+    }
+
+    .Nav_contenedor-Ul{
+        width: 100%;
+    }
+
+    .Nav_Ul{
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header_Div-nombre{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 499px){
+    .Nav_Ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imagen{
+        margin-top: 60px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+        </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header_Div-nombre">
+                <h1>Diego Andres Castro Quintero</h1>
+            </div>
+            <nav class="header_Nav">
+                <div class="Nav_contenedor-Ul">
+                    <ul class="Nav_Ul">
+                        <li class="lista"><a href="./index.html" class="enlace">Incio</a></li>
+                        <li class="lista"><a href="./Sobremi.html" class="enlace">Sobre Mi</a></li>
+                        <li class="lista"><a href="./Proyectos.html" class="enlace">Mis proyectos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+            <div class="contenedor-imagen">
+                <img src="/Img/habilidades-informaticas.jpg" class="imagen">
+            </div>
+            <div class="cont2">
+                <img src="/Img/sobremidiego.jpeg" class="lamborghiniHuracan">  
+                <h2 class="TituloslamboHuracan">Diego Andres Castro Quintero</h2>
+                <p class="parrafoLamboHuracan">
+                    Edad:17
+                    Estudiante del Sena
+                    Oficio:Programador
+                    Desempleado
+                </p>
+                <h3></h3>
+            </div>
+        <footer class="autor">
+            <h3 class="contenedor_parrafo">Todos los derechos reservados. Diego Andres Castro Quintero</h3>
+        </footer>
+    </body>
+</html>

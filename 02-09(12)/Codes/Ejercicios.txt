@@ -1,0 +1,188 @@
+1.	Crear programa, en una página web, donde el usuario introduce su altura (cm), edad, sexo y peso actual. El programa responde con una referencia de peso aproximado.
+2.	Realizar programa en el que el usuario introduce el número del mes (1 al 12) y el código responde si ese mes tiene 30 o 31 días.
+3.	Realizar ALGORITMO ESTRUCTURADO para una agencia de viajes. Si el usuario introduce como origen la ciudad de Palma y como destino Barcelona, el descuento se establece en el 5%. Con el mismo origen, si el destino es Madrid el descuento es del 10% y si el destino es Valencia, el descuento es del 15%.
+4.	Crear programa, en una pàgina web, donde el usuario introduce su altura (cm), edad, sexo y peso actual. El programa responde con una referencia de peso aproximado.
+5.	Explique que realiza el siguiente código 
+<!DOCTYPE html>
+<html><head><script type="text/javascript">
+function inic(){
+var DI = document.game.dinero.value = 100;
+}
+function calc(){
+var Din = parseInt(document.game.dinero.value);
+var Num = document.game.num.value;
+var Apu = parseInt(document.game.apuesta.value);
+var dado = Math.floor(Math.random() * 7);
+var ganancia = 0;
+if (Din > 0)
+{
+if (Num == dado)
+{
+document.game.dado.value = dado;
+document.game.res.value = ("Has ganado! " + Apu*2);
+ganancia = (Din+Apu*2);
+document.game.dinero.value = ganancia;
+}
+else{
+document.game.dado.value = dado;
+document.game.res.value = ("Has perdido!" + Apu);
+ganancia = (Din-Apu);
+document.game.dinero.value = ganancia;
+}
+}
+else{
+window.alert("Has perdido todo tu dinero!");
+}
+}
+</script>
+</head>
+<body>
+<h1 align="center">JUEGO APUESTAS</h1>
+<form name="game">
+<div align="center">
+Dinero: <input type="text" name="dinero" size="5"> &nbsp;&nbsp;
+Numero del dado: <input type="label" name="dado" size="5">
+<br><br>
+Introduzca un numero del 1 al 6: <input type="text" name="num" size="5">
+<br><br>
+Introduzca su apuesta: <input type="text" name="apuesta" size="5">
+<br><br>
+<input type="button" name="play" value="Jugar" onClick="calc()">
+<input type="button" name="Start" value="Start" onClick="inic()">
+<br><br>
+<input type="label" name="res" size="15">
+</div>
+</form>
+</body>
+</html>
+
+Aplicando la teoría de bucles realice los siguientes ejercicios 
+
+6.	Crear programa para que salgan en pantalla los siguientes números:
+54321
+4321
+321
+21
+7.	Ejecutar el programa y entender su lógica.
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/>
+<script>
+let fila;
+let columna = parseInt(prompt("Introduce el tamaño: ", "0"))
+for (fila = 1; fila <= columna; fila++)
+{
+for (espacios = columna - fila; espacios > 0; espacios--)
+document.write("&nbsp&nbsp");
+for (conta = 1; conta < (2 * fila); conta++)
+document.write("*");
+document.writeln("</br>");
+}
+</script>
+</head>
+</html>
+8.	En base al ejercicio anterior, realizar programa que dibuja un ROMBO.
+
+9.	Realizar una página web, con programación en ES6, con al menos una función. En esta web se pide al usuario 2 números del 1 al 10. Una vez introducidos los números, el ordenador muestra una tabla (HTML) que contiene la tabla de multiplicar del número 1 hasta el número2.
+Ejemplo: El usuario introduce el número 2 y 4, la web enseña por pantalla:
+2 x1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2	x 4 = 8
+10.	Programa que lee tres notas de un alumno, calcula la media e indicar el valor de la nota y la palabra “Excelente” si tiene un valor mayor que 8 , “Aprobado” entre 5 y 8 , “Suspendido” < 5
+11.	Realizar programa en JUEGO DADOS Queremos programar un juego de dados en una página web. El usuario empieza con 50€ para poder apostar. El usuario decide a que número apuesta del 1 al 6, y también que cantidad de euros quiere apostar. Se “lanza” un dado (asignación al azar de un número del a 1 al 6)
+Si el usuario acierta el número, gana el doble de lo que ha apostado. Si no acierta, pierde todo lo apostado. El juego acaba cuando el usuario llega a 0 euros o al llegar a 200 euros.
+
+12.	Proyecto Menu-Slide con programación jQuery:
+<!DOCTYPE html >
+<html><head>
+<title>Transitions amb jQuery</title>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+var toggle =1;
+$(document).ready(function () {
+$(".encabezado").click(function () {
+if (toggle) { $(".slide-menu").css("transform", "translate3d(0, 0, 0)");
+$(".contenedor").css("transform", "translate3d(250px, 0, 0)");
+toggle=0;}
+else { $(".slide-menu").css("transform", "translate3d(-250px, 0, 0)");
+$(".contenedor").css("transform", "translate3d(0, 0, 0)");
+toggle =1;}});
+}); // fi document.ready
+</script>
+</head>
+<body>
+<div class="slide-menu">
+<nav class="menu">
+<li><a href="#">Home</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Contacto</a></li>
+</nav>
+</div>
+<div class="contenedor">
+<div class="encabezado">
+<h1>&equiv; Transitions</h1>
+</div>
+<h2>Texto e información de la web</h2>
+</div> <!-- fi contenedor -->
+</body>
+</html>
+
+estilos.CSS:
+.slide-menu {
+transform: translate3d(-250px, 0, 0);
+position: absolute;
+width: 250px;
+background: #4f6b81;
+color: #ddd;
+left: 0;
+transition: all .3s;
+}
+.slide-menu h1 {
+height: 50px;
+text-shadow: 1px 1px 1px #000;
+}
+.slide-menu img {
+height: 90px;
+}
+.menu {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.menu a {
+display: block;
+text-decoration: none;
+color: #fff;
+font-size: 1em;
+padding: 15px;
+background: linear-gradient(#0088CC,#006699);
+border-bottom: 1px solid #1e222b;
+box-shadow: inset 0px 1px 1px #8b9db3;
+}
+.menu a:hover {
+background: linear-gradient(#3b3f48, #3c434d);
+box-shadow: inset 0px 1px 1px #475059;
+}
+body {
+font-family: Helvetica, Arial, sans-serif;
+margin: 0;
+padding: 0;
+min-width: 100%;
+}
+.encabezado {
+width:100%;
+background-color: #006699;
+color: #E9FAFA;
+height: 90px;
+display: block;
+}
+.contenedor {
+width: 100%;
+overflow: hidden;
+min-height: 100%;
+transform: translate3d(0, 0, 0);
+transition: transform .3s;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>perdio el año</title>
+    <link rel="stylesheet" href="./Styles/style10.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+        <h1>Notas</h1>
+        <nav class="header_Nav">
+            <div class="Nav_contenedor-Ul">
+                <ul class="Nav_Ul">
+                    <li class="lista"><a href="./Index.html" class="enlace">Incio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" min="0" max="10">
+    </div>
+    <div class="contenedor">
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" min="0" max="10">
+    </div>
+    <div class="contenedor">
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3" min="0" max="10">
+    </div>
+    <div class="contenedor">
+        <button id="boton" onclick="calcularMedia()">Calcular Media</button>
+        <button id="resetBoton" onclick="limpiar()">Limpiar</button>
+    </div>
+    <div class="contenedor">
+        <div class="notas" id="resultado"></div>
+    </div>
+        
+
+    <script>
+        function calcularMedia() {
+            const nota1 = parseFloat(document.getElementById('nota1').value);
+            const nota2 = parseFloat(document.getElementById('nota2').value);
+            const nota3 = parseFloat(document.getElementById('nota3').value);
+            const resultadoDiv = document.getElementById('resultado');
+
+            if (!isNaN(nota1) && !isNaN(nota2) && !isNaN(nota3)) {
+                const media = (nota1 + nota2 + nota3) / 3;
+
+                let mensaje;
+                if (media > 8) {
+                    mensaje = `Excelente (Media: ${media.toFixed(2)})`;
+                } else if (media >= 5) {
+                    mensaje = `Aprobado (Media: ${media.toFixed(2)})`;
+                } else {
+                    mensaje = `Suspendido (Media: ${media.toFixed(2)})`;
+                }
+
+                resultadoDiv.innerHTML = mensaje;
+            } else {
+                resultadoDiv.innerHTML = 'Por favor, ingresa notas válidas (entre 0 y 10).';
+            }
+        }
+
+        function limpiar() {
+            document.getElementById('nota1').value = '';
+            document.getElementById('nota2').value = '';
+            document.getElementById('nota3').value = '';
+            document.getElementById('resultado').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

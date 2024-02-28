@@ -1,0 +1,139 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    cursor: pointer;
+    background-color:#31e048;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    padding-top: 0.5rem;
+    justify-content: center;
+  }
+
+.header_Div-nombre{
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.3em;
+    background-color: #310a75;
+}
+
+.header_Nav{
+    width: 100%;
+}
+
+.Nav_contenedor-Ul{
+    width: 100%;
+}
+
+.Nav_Ul{
+    display: flex;
+}
+
+.lista{
+    list-style: none;
+    flex-grow: 1;
+    background-color: aqua;
+    text-align: center;
+    height: 60px;
+}
+
+.enlace{
+    display: flex;
+    height: 60px;
+    background-color: #CAFC37;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    justify-content: center;
+}
+
+.enlace:hover{
+    background-color: #37FC9E;
+    text-align: center;
+    font-size: 20px;
+}
+
+#boton, #resetBoton, #lucesBoton, #apagarBoton {
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 7rem;
+    font-size: 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+
+  #resetBoton {
+    background-color: #e74c3c;
+    cursor:pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #resetBoton:hover {
+    background-color: #c0392b;
+  }
+
+#tree {
+    font-family: monospace;
+    text-align: center;
+}
+
+.star {
+    color: gold;
+    font-size: 40px;
+}
+
+.sphare{
+    color: black;
+    animation: changeColor 10s infinite;
+}
+
+.ornament {
+    color: green;
+    font-size: 20px;
+}
+
+.trunk {
+    background-color: brown;
+    margin: 0 auto;
+}
+
+@keyframes changeColor {
+    0%, 20% {
+        color: green;
+    }
+    20%, 40% {
+        color: yellow;
+    }
+    40%, 60% {
+        color: orangered;
+    }
+    60%, 90% {
+        color: blue;
+    }
+ 
+    }
+
+
